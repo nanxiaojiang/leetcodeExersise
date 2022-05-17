@@ -62,7 +62,7 @@ public class ListNodeMerge21 {
                 return l1;
             }else {
                 //否则l2的值小于l1的值，递归l2.next = mergeTwoList(l1,l2.next)
-                l2 = mergeTwoLists(l1,l2.next);
+                l2.next = mergeTwoLists(l1,l2.next);
                 return l2;
             }
         }
